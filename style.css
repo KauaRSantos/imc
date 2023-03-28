@@ -1,0 +1,106 @@
+@charset "utf-9";
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+
+
+
+
+body{
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   align-content: center;
+   background-image: url(https://webenezer.com.br/wp-content/uploads/2017/09/web-designer-pune-background-verde-azul-webenezer.jpg);
+   width: 100vw;
+   height: 100vh;
+    font-family: 'Alatsi', sans-serif;
+    
+
+    
+}
+
+
+h1 {
+   font-size: 4rem;
+   padding: 30px;
+   color:#348e91 ;
+   
+}
+
+
+.informe{
+  margin-left: -6px;
+   
+}
+
+.informe2{
+   margin-right: 18%;
+   
+}
+
+
+input{
+   margin-bottom: 5px;
+   border-radius: 6px;
+   height: 35px;
+   width: 30%;
+   color: #1c5052;
+   
+}
+
+.idk{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 10px;
+   color: #1c5052;
+}
+
+
+button{
+    width: calc(15% - 10px);
+    height: 40px;
+    font-size: 20px;
+    margin: 25px;
+    border: none;
+    background-color: #1c5052;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: -1px 1px 10px black;
+    
+    
+    
+   
+    
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+button:active {
+   transform: scale(0.9);
+   box-shadow: none;
+}
+
+.resultado{
+   color: #1c5052;
+   font-size: 25px;
+   margin-top: 50px;
+
+   
+}
+
+footer{
+    
+   width: 100%;
+   bottom: 0vh;
+   left: 0;
+   text-align: center;
+   padding: 15px ;
+   color: aliceblue;
+   background-color: #1c5052;
+   font-size: 20px;
+   
+   
+}

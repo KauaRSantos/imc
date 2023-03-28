@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>IMC Calculator</h1>
+    <div class="idk">
+   <div class="informe"><label for="peso" class="idk">Informe seu peso (kg)</label></div>
+    <input type="number" id="peso" name="peso" >
+    <br>
+    
+    
+    <div class="informe2"><label for="altura" class="label2">Informe sua altura (metros e cm)</label></div>
+    <input type="number" id="altura" name="altura" >
+    <br>
+
+    <button onclick="calcularImc()">Calcular</button>
+    <br>
+
+   <div class="resultado"> <p>Seu índice de massa corporal é: <span id="resultado"></span></p></div>
+</div>
+<br><br><br>
+<footer>Desenvolvido Por kauã.kaze@gmail.com</footer>
+
+    <script>
+        function calcularImc() {
+            const peso = window.document.getElementById("peso").value;
+            const altura = window.document.getElementById("altura").value;
+            const imc = peso / (altura**2)
+            document.getElementById("resultado").textContent = imc.toFixed(2)
+            
+        }
+
+        let tiutloDinamico = document.title;
+        window.addEventListener("blur", ()=>{
+            document.title = "Saia e não volte mais"
+        })
+        window.addEventListener("focus", ()=>{
+            document.title = tiutloDinamico
+        })
+
+
+
+
+    </script>
+
+
+
+    
+
+
+
+</body>
+</html>
